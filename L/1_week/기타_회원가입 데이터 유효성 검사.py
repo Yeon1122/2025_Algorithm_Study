@@ -1,5 +1,6 @@
 ############## 주의 ##############
 # 입력을 받기위한 input 함수는 절대 사용하지 않습니다.
+#풀이 1
 def is_user_data_valid(user_data):
     
     # 여기에 코드를 작성하여 함수를 완성합니다.
@@ -14,6 +15,10 @@ def is_user_data_valid(user_data):
 
 # 추가 테스트를 위한 코드 작성 가능
 # 예) print(함수명(인자))
+#####################################################
+#풀이 2
+def is_user_data_valid_2(user_data):
+    return bool(user_data['id']) and bool(user_data['password'])
 
 #####################################################
 # 아래 코드를 삭제하는 경우 
