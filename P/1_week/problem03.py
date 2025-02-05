@@ -1,24 +1,18 @@
 ############## 주의 ##############
 # 입력을 받기위한 input 함수는 절대 사용하지 않습니다.
-#풀이 1
 def is_user_data_valid(user_data):
-    
-    # 여기에 코드를 작성하여 함수를 완성합니다.
-    #만약 user_data['id']이 비어있는 문자열 그리고 user_data['password']가 비어있는 문자열이면 
-    if user_data['id'] != '' and user_data['password'] != '':
-        #True를 리턴하고
+    # id에 'id' 값 넣고 password에 'password' 값 넣기
+    id = user_data.get('id')
+    password = user_data.get('password')
+    # id와 password 모두 True일 시 True 반환
+    if id and password:
         return True
-    #그 외는
     else:
-        #False를 리턴한다.
         return False
+    
 
 # 추가 테스트를 위한 코드 작성 가능
 # 예) print(함수명(인자))
-#####################################################
-#풀이 2
-def is_user_data_valid_2(user_data):
-    return bool(user_data['id']) and bool(user_data['password'])
 
 #####################################################
 # 아래 코드를 삭제하는 경우 

@@ -1,6 +1,6 @@
 ############## 주의 ##############
 # 입력을 받기위한 input 함수는 절대 사용하지 않습니다.
-
+# 풀이 1
 def is_id_valid(user_data):
     pass
     # 여기에 코드를 작성하여 함수를 완성합니다.
@@ -15,7 +15,14 @@ def is_id_valid(user_data):
             return True
     #True를 반환하지 못했다면 루프 종료 후 False를 반환한다.    
     return False   
+#####################################################
+# 풀이 2
+def is_id_valid_2(user_data):
+    id_lastletter = user_data.get('id')[-1]
 
+    return id_lastletter.isdecimal()
+
+#####################################################
 # 추가 테스트를 위한 코드 작성 가능
 # 예) print(함수명(인자))
 
@@ -36,3 +43,6 @@ user_data2 = {
 }
 print(is_id_valid(user_data2)) # False
 #####################################################
+
+# id = user_data2.get('id')[-1]
+# print(id.isdecimal())

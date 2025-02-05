@@ -1,5 +1,5 @@
 # 2025 Algorithm Study
-> SSAFY 13기 대전 2반 권자은, 박세윤, 양현지, 이하연, 허재은
+> SSAFY 13기 대전 2반 권자은, 박세윤, 양현지, 이하연, 임주빈, 허재은
 
 * 기간: 2025년 2월~
 * 참고 사이트: [SW Expert Academy](https://swexpertacademy.com/main/main.do)
@@ -39,7 +39,7 @@
 
 ## 파일 및 폴더 구조
 **폴더**
-K - 권자은 / P - 박세윤 / Y - 양현지 / L - 이하연 / H - 허재은
+K - 권자은 / P - 박세윤 / Y - 양현지 / L - 이하연 / J - 임주빈 / H - 허재은
 
 **개인 폴더 안 폴더**
 1_Week, 2_Week, 3_Week ...
