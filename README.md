@@ -1,5 +1,5 @@
 # 2025 Algorithm Study
-> SSAFY 13기 대전 2반 권자은, 박세윤, 양현지, 이하연, 임주빈, 허재은
+> SSAFY 13기 대전 2반 권자은, 안덕현, 양현지, 이하연, 임주빈, 허재은
 
 * 기간: 2025년 2월~
 * 참고 사이트: [SW Expert Academy](https://swexpertacademy.com/main/main.do)
@@ -30,7 +30,7 @@
 * 아프거나 피치 못한 사정이 있을 경우 연락 남기기
 * 모인 벌금은 월말에 1/N 하거나 회식(저녁 식사)에 사용 (협의 예정)
 
-## Commit Message 규칙
+## Commit Message 규칙(참고)
 **Commit Message**
 * [SWEA-문제번호] 문제명
 * [Baekjoon-문제번호] 문제명
@@ -39,12 +39,12 @@
 
 ## 파일 및 폴더 구조
 **폴더**
-K - 권자은 / P - 박세윤 / Y - 양현지 / L - 이하연 / J - 임주빈 / H - 허재은
+K - 권자은 / A - 안덕현 / Y - 양현지 / L - 이하연 / J - 임주빈 / H - 허재은
 
 **개인 폴더 안 폴더**
 1_Week, 2_Week, 3_Week ...
 
-**파일명**
+**파일명(참고)**
 * SWEA_문제번호_문제명.py
 * Baekjoon_문제번호_문제명.py
 * 기타_문제명.py
