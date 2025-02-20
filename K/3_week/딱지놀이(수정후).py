@@ -2,7 +2,7 @@ def c(arr_a,arr_b):
     global min_len
     i=4
     count=0
-    while count!=min_len:
+    while i>0:
         
         if arr_a.count(i)>arr_b.count(i):
             return 'A'
