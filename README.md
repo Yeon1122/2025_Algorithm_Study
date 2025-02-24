@@ -5,6 +5,8 @@
 * 참고 사이트: [SW Expert Academy](https://swexpertacademy.com/main/main.do)
 * 언어: 파이썬
 
+* Notion: https://www.notion.so/2025_Algorithm_Study-18f15b00dd8480a5b1d2f01938f92d81?pvs=4
+
 ## 스터디 규칙
 **문제**
 * 문제는 주 7일 출제
