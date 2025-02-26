@@ -1,5 +1,3 @@
-##오답 100문제 중 10문제 정답
-
 TC = int(input())
 for tc in range(1, TC+1):
     N, *mission = map(str,input().split())
@@ -17,6 +15,8 @@ for tc in range(1, TC+1):
             O_next_aim.append(int(mission[i+1]))
     
     while mission:
+        result += 1
+
         if B_next_aim:
             if B_loc != B_next_aim[0]:
                 if B_loc < B_next_aim[0]:
@@ -29,7 +29,7 @@ for tc in range(1, TC+1):
                 mission.pop(0)
                 if O_next_aim:
                     if O_loc == O_next_aim[0] == int(mission[1]) and mission[0] == "O":
-                        result += 1
+                        continue
 
         if O_next_aim:
             if O_loc != O_next_aim[0]:
@@ -41,7 +41,5 @@ for tc in range(1, TC+1):
                 O_next_aim.pop(0)
                 mission.pop(0)
                 mission.pop(0)
-        
-        result += 1
 
     print(f'#{tc} {result}')
