@@ -47,12 +47,13 @@ for tc in range(1,T+1):
             button_order.append(button[i])
 
     while button_order:
+        Turn = False
         if orange:
-            if orange_pos == orange[0]:
+            if orange_pos == orange[0] and Turn == False:
                 if button_order[0] == 'O':
                     orange.pop(0)
                     button_order.pop(0)
-                
+                    Turn = True
                     if not button_order:
                         cnt += 1
                         break
@@ -65,10 +66,11 @@ for tc in range(1,T+1):
                 pass
 
         if blue:
-            if blue_pos == blue[0]:
+            if blue_pos == blue[0] and Turn == False:
                 if button_order[0] == 'B':
                     blue.pop(0)
                     button_order.pop(0)
+                    Turn = True
                     if not button_order:
                         cnt += 1
                         break
