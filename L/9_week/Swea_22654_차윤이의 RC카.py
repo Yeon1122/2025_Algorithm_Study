@@ -28,22 +28,19 @@ C command #(반복) 커맨드 길이 커맨드 Q번
 [문제 풀이]
 '''
 #상,우,하,좌
-di = [0,1,0,-1]
-dj = [-1,0,1,0]
+di = [-1,0,1,0]
+dj = [0,1,0,-1]
 
 def move_car(i,j,dir,cur,c_len,command_lst):
-    # result = 0
+    global result
 
-    # print("move",i,j,dir,command_lst[cur],graph[i][j])
+    print("move",i,j,dir,graph[i][j])
 
     if cur == c_len:
-        print(i,j)
-        print(graph[i][j])
+        if graph[i][j] == 'Y':
+            result = 1    
         return
-        # if graph[i][j] == 'Y':
-        #     return 
 
-    
     if command_lst[cur] == 'A':
         ni, nj = i+di[dir], j+dj[dir]
         # move_car(ni,nj,dir,cur+1,c_len,command_lst)
@@ -85,7 +82,9 @@ for t in range(1, T+1): #(반복) 1, T+1
 
     answer = []
     for k in range(Q):
-        answer.append(move_car(start_i,start_j,0,0,command_len[k],command[k]))
+        result = 0
+        move_car(start_i,start_j,0,0,command_len[k],command[k])
+        answer.append(result)
     
-    print(answer)
+    print(f'#{t}',*answer)
 
